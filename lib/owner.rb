@@ -30,7 +30,7 @@ class Owner
     cats = []
     Cat.all.each do |cat|
       if cat.owner == self
-        cats << cat.name
+        cats << cat
       end
     end
     cats
