@@ -28,6 +28,11 @@ class Owner
   
   def cats
     cats = []
-    Cat.all.each{|cat|cat.owner == self ? cats << cat.name}
+    Cat.all.each do |cat|
+      if cat.owner == self
+        cats << cat.name
+      end
+    end
     cats
+  end
 end
