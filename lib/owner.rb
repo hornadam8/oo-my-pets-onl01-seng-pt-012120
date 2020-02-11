@@ -27,5 +27,7 @@ class Owner
   end
   
   def cats
-    Dir.new(Cat.name).collect{|cat| if cat.owner = self}
+    cats = []
+    Cat.all.each{|cat|if cat.owner == self : cats << cat.name}
+    cats
 end
