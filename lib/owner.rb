@@ -25,4 +25,7 @@ class Owner
   def self.reset_all
     @@all = []
   end
+  
+  def cats
+    Dir.new(Cat.name).collect{|cat| if cat.owner = self}
 end
