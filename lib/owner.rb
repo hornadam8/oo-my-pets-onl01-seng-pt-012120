@@ -75,5 +75,10 @@ class Owner
       cat.mood = "nervous"
       cat.owner = nil
     end
+    
+    def list_pets
+      dc = self.dogs.length
+      cc = self.cats.length
+      "I have "
   end
 end
