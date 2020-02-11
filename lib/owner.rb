@@ -79,6 +79,6 @@ class Owner
     def list_pets
       dc = self.dogs.length
       cc = self.cats.length
-      "I have "
+      "I have #{"
   end
 end
